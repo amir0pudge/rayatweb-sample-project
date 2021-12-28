@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css"
+        integrity="sha512-xIEmv/u9DeZZRfvRS06QVP2C97Hs5i0ePXDooLa5ZPla3jOgPT/w6CzoSMPuRiumP7A/xhnUBxRmgWWwU26ZeQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <form action="login.php" name="login" onsubmit="return _form()">
+            <div>
+                <div>log in</div>
+            </div>
+            <div>
+                <i class="far fa-user-circle"></i>
+            </div>
+            <div>
+                <span id="icon">
+                    <input type="email" name="email" id="email" placeholder="| Email">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <div>
+                    <div class="reson1">your email must have @ , .</div>
+                    <div class="reson2">your email too short or too large</div>
+                    <div class="reson4">your email is Invalid</div>
+                </div>
+            </div>
+            <div>
+                <span id="icon">
+                    <input type="password" name="pass" id="pass" placeholder="| password">
+                    <i class="fas fa-lock"></i>
+                </span>
+                <div>
+                    <div class="reson3">your password too short or too large</div>
+                    <div class="reson5">your password must have A_Z</div>
+                    <div class="reson6">your password must have a_z</div>
+                    <div class="reson7">your password must have 0_9</div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <input type="checkbox" id="check"><label for="check">remember me</label>
+                </div>
+                <div>
+                    <a href="#">forgot your password ?</a>
+                </div>
+            </div>
+            <div>
+                <button>
+                    <a onclick="_form()" href="#">login</a>
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+<script src="js/master.js"></script>
+
+</html>

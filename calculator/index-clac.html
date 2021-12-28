@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form name="calc">
+        <input type="text" disabled value="" name="calc">
+        <input type="button" value="AC" onclick="ac()">
+        <input type="button" value="C" onclick="c()">
+        <input type="button" value="%" onclick="data(this.value)">
+        <input type="button" value="-" onclick="data(this.value)">
+        <input type="button" value="9" onclick="data(this.value)">
+        <input type="button" value="8" onclick="data(this.value)">
+        <input type="button" value="7" onclick="data(this.value)">
+        <input type="button" value="*" onclick="data(this.value)">
+        <input type="button" value="6" onclick="data(this.value)">
+        <input type="button" value="5" onclick="data(this.value)">
+        <input type="button" value="4" onclick="data(this.value)">
+        <input type="button" value="/" onclick="data(this.value)">
+        <input type="button" value="3" onclick="data(this.value)">
+        <input type="button" value="2" onclick="data(this.value)">
+        <input type="button" value="1" onclick="data(this.value)">
+        <input type="button" value="+" onclick="data(this.value)">
+        <input type="button" value="0" onclick="data(this.value)">
+        <input type="button" value="." onclick="data(this.value)">
+        <input type="button" value="=" onclick="equal()">
+        <div style="clear: both;"></div>
+        <script src="js/master.js"></script>
+    </form>
+</body>
+</html>

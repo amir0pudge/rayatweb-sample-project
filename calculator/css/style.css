@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    background-color: #333;
+    width: 350px;
+    border-radius: 10px;
+    margin: 100px auto;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input[name="calc"] {
+    background: #ddd;
+    height: 80px;
+    border-radius: 8px;
+    margin: 5px;
+    width: calc(100% - 10px);
+    text-align: center;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+}
+
+input[ type="button"] {
+    width: calc(100% / 4 - 6.5px);
+    height: 70px;
+    background: #333;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 0 5px 5px;
+    border: 1px solid rgb(192, 13, 88);
+    outline: none;
+    border: none;
+    transition: .7s;
+    font-size: 30px;
+}
+
+input[ type="button"]:nth-last-of-type(1) {
+    background: #333;
+    color: white;
+    width: calc(50% - 7px);
+    font-size: 30px;
+}
+
+input[ type="button"]:hover {
+    border: 1px solid rgb(192, 13, 88);
+    background: rgb(192, 13, 88);
+}
