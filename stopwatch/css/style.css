@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    background: #a8c0ff;
+    background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);
+    background: linear-gradient(to right, #3f2b96, #a8c0ff);
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.main {
+    width: 45%;
+    height: 55vh;
+    background: #5d8afc;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateZ(10px);
+    -webkit-box-shadow: 10px 10px 40px 0px rgba(51, 67, 128, 1);
+    -moz-box-shadow: 10px 10px 40px 0px rgba(51, 67, 128, 1);
+    box-shadow: 10px 10px 40px 0px rgba(51, 67, 128, 1);
+    border-radius: 20px;
+}
+
+.main>div {
+    width: 100%;
+    border-radius: 20px;
+    /* border:1px solid red; */
+    display: flex;
+    position: relative;
+}
+
+.main>div:nth-of-type(1) {
+    height: 30%;
+    justify-content: flex-start;
+    padding-left: 40px;
+}
+
+.main>div:nth-of-type(1)>p {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    /* border:1px solid red; */
+}
+
+.main>div:nth-of-type(2) {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 10000;
+    /* border:1px solid red; */
+}
+
+.main>div:nth-of-type(2)>div {
+    width: 110%;
+    position: absolute;
+    z-index: 100;
+    height: 75%;
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 100px;
+}
+
+.main>div:nth-of-type(2)>div>div {
+    width: 100%;
+    height: 100%;
+    /* border:1px solid red; */
+    border-radius: 10px;
+    margin-top: -80px;
+    display: flex;
+}
+
+.main>div:nth-of-type(2)>div>div>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main>div:nth-of-type(2)>div>div>div:nth-of-type(1),
+.main>div:nth-of-type(2)>div>div>div:nth-of-type(3),
+.main>div:nth-of-type(2)>div>div>div:nth-of-type(5),
+.main>div:nth-of-type(2)>div>div>div:nth-of-type(7) {
+    height: 100%;
+    width: 20%;
+    /* border:1px solid red; */
+    font-size: 40px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: black;
+}
+
+.main>div:nth-of-type(2)>div>div>div:nth-of-type(2),
+.main>div:nth-of-type(2)>div>div>div:nth-of-type(4),
+.main>div:nth-of-type(2)>div>div>div:nth-of-type(6) {
+    height: 100%;
+    width: 8.3333%;
+    /* border:1px solid red; */
+    font-size: 40px;
+    color: rgba(128, 128, 128, 0.89);
+}
+
+.main>div:nth-of-type(2)>div>div>div>p {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 50%;
+    z-index: 1000;
+    color: rgba(128, 128, 128, 0.781) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px !important;
+}
+
+.main>div:nth-of-type(2)>button {
+    position: absolute;
+    bottom: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: white;
+    z-index: 200;
+    background-color: rgb(55, 55, 122);
+    font-size: 29px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    line-height: 70px;
+}
+
+.main>div:nth-of-type(2)>button:nth-of-type(1) {
+    left: 33%;
+}
+
+.main>div:nth-of-type(2)>button:nth-of-type(2) {
+    left: 47%;
+    /* display: none; */
+}
+
+.main>div:nth-of-type(2)>button:nth-of-type(3) {
+    left: 61%;
+    /* display: none; */
+}
+
+.title {
+    width: 100%;
+    height: 50px !important;
+    /* background-color: black; */
+    position: absolute;
+    bottom: 26%;
+    z-index: 1000;
+    display: flex;
+}
+
+.title>div {
+    width: 25% !important;
+    height: 100%;
+    /* border:1px solid red; */
+    color: grey !important;
+    font-size: 12px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 600px;
+    text-transform: uppercase;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.title>div:nth-of-type(1) {
+    padding-right: 40px;
+}
+
+.title>div:nth-of-type(2) {
+    padding-right: 18px;
+}
+
+.title>div:nth-of-type(3) {
+    padding-left: 10px;
+}
+
+.title>div:nth-of-type(4) {
+    padding-left: 40px;
+}
